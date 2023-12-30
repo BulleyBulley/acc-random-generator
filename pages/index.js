@@ -37,8 +37,8 @@ export default function Home() {
         <h1 className={styles.title}>
           Random ACC Car Generator
         </h1>
-
-        <select className='carClassSelectionBox' onChange={handleSelectCarClass}>
+        <div className={styles.carClassSelectionContainer}>
+        <select className={styles.carClassSelectionBox} onChange={handleSelectCarClass}>
           <option value="all">ALL</option>
           <option value="gt3">GT 3</option>
           <option value="gt4">GT 4</option>
@@ -46,13 +46,21 @@ export default function Home() {
           <option value="tcx">TCX</option>
         </select>
 
-        <button onClick={handleGenerate} className='generateBtn'>Generate</button>
+        </div>
 
+        <div className={styles.generateContainer}>
+        <button onClick={handleGenerate} className={styles.generateBtn}>Generate</button>
+        </div>
+
+        <div className={styles.showCarContainer}>
         <h2 className='showCar'>
           {generatedCar.name}
         </h2>
         <h3 className='showCarClass'>
           {generatedCar.gtClass} </h3>
+        </div>
+
+
 
       </main>
 
