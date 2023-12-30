@@ -8,7 +8,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -84,12 +84,7 @@
   height: 1em;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
+
 
 
 .carClassSelectionContainer {
@@ -109,6 +104,7 @@
   font-family: inherit;
   font-size: 1.1rem;
   text-align: center;
+  color: black;
 }
 
 .generateContainer {
@@ -117,16 +113,17 @@
   align-items: center;
   justify-content: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 100%;
+  width: 40%;
   height: 5vh;
 }
 
 .generateBtn {
-  width: 25%;
+  width: 100%;
   height: 8vh;
   font-family: inherit;
   font-size: 1.5em;
   box-shadow: 2px 5px 5px grey;
+  color: black;
 }
 
 .showCarContainer {
