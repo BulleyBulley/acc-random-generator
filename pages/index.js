@@ -53,10 +53,10 @@ export default function Home() {
         </div>
 
         <div className={styles.showCarContainer}>
-        <h2 className='showCar'>
+        <h2>
           {generatedCar.name}
         </h2>
-        <h3 className='showCarClass'>
+        <h3>
           {generatedCar.gtClass} </h3>
         </div>
 

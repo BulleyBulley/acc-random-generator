@@ -99,13 +99,16 @@
   justify-content: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 100%;
-  height: 5vw;
+  height: 10vh;
 }
 
 .carClassSelectionBox {
-  width: 10vw;
-  height: 2vw;
+  width: 35%;
+  height: 5vh;
   box-shadow: 2px 5px 5px grey;
+  font-family: inherit;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .generateContainer {
@@ -115,12 +118,14 @@
   justify-content: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 100%;
-  height: 5vw;
+  height: 5vh;
 }
 
 .generateBtn {
-  width: 8vw;
+  width: 25%;
   height: 8vh;
+  font-family: inherit;
+  font-size: 1.5em;
   box-shadow: 2px 5px 5px grey;
 }
 
@@ -128,9 +133,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: flex-start;
+
+  background-color: rgb(248, 248, 248);
   width: 100%;
-  height: 5vw;
+  height: 100%;
   margin: 3vw;
+  padding: 0.5vw;
+  border-radius: 15px;
+}
+
+.showCarContainer h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.showCarContainer h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
 }
