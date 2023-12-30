@@ -25,6 +25,10 @@ export default function Home() {
     setCarClass(e.target.value);
   }
 
+  const handleClearBtn = () => {
+    setGeneratedCar("");
+  }
+
 
   return (
     <div className={styles.container}>
@@ -34,9 +38,11 @@ export default function Home() {
       </Head>
 
       <main>
+      <div className={styles.titleContainer}>
         <h1 className={styles.title}>
           Random ACC Car Generator
         </h1>
+        </div>
         <div className={styles.carClassSelectionContainer}>
         <select className={styles.carClassSelectionBox} onChange={handleSelectCarClass}>
           <option value="all">ALL</option>
@@ -57,9 +63,14 @@ export default function Home() {
           {generatedCar.name}
         </h2>
         <h3>
-          {generatedCar.gtClass} </h3>
+          {generatedCar.gtClass} 
+          </h3>
         </div>
 
+      <div className={styles.clearBtnContainer}>
+      <button className={styles.clearBtn} onClick={handleClearBtn}>Clear</button>
+
+      </div>
 
 
       </main>
@@ -70,11 +81,11 @@ export default function Home() {
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
+          padding: 3rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
         }
         footer {
